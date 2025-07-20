@@ -14,6 +14,29 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  background: linear-gradient(135deg, #ff0080, #7928ca);
+}
+
+#main-desc {
+  color: whitesmoke;
+  text-shadow: 2px 2px rgb(27, 26, 26);
+}
+
+#create-grid {
+  color: whitesmoke;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #f7971e, #ffd200);
+  border: none;
+  transition: all ease 0.1s;
+  cursor: pointer;
+}
+#create-grid:hover {
+  background: linear-gradient(135deg, #ffd200, #f7971e);
+  box-shadow: 0px 0px 8px 2px whitesmoke;
+  transform: scale(1.1);
 }
 
 #container {
@@ -22,4 +45,6 @@ body {
   height: 700px;
   display: flex;
   flex-wrap: wrap;
+  background-color: whitesmoke;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.3);
 }
