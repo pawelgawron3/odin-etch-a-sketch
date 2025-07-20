@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
 *,
 *::before,
 *::after {
@@ -15,6 +17,23 @@ body {
   height: 100vh;
   overflow: hidden;
   background: linear-gradient(135deg, #ff0080, #7928ca);
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  align-self: flex-start;
+  padding-left: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: whitesmoke;
+  text-shadow: 2px 2px rgb(27, 26, 26);
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  transform: scale(1.1);
+  color: #ffcc00;
 }
 
 #main-desc {
@@ -30,9 +49,10 @@ body {
   border-radius: 5px;
   background: linear-gradient(135deg, #f7971e, #ffd200);
   border: none;
-  transition: all ease 0.1s;
+  transition: all 0.1s ease;
   cursor: pointer;
 }
+
 #create-grid:hover {
   background: linear-gradient(135deg, #ffd200, #f7971e);
   box-shadow: 0px 0px 8px 2px whitesmoke;
