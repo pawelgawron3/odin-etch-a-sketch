@@ -21,6 +21,8 @@ function createGrid(side) {
         ${rndCol2},
         ${rndCol3}
       )`;
+      let opacity = parseFloat(innerDiv.style.opacity || 0) + 0.1;
+      innerDiv.style.opacity = Math.min(opacity, 1);
     });
     container.appendChild(innerDiv);
   }
@@ -34,9 +36,9 @@ btn.addEventListener("click", () => {
   let side = parseInt(userInput);
   if (isNaN(side) || side < 0) {
     alert("Error! Please enter a positive number!");
-  } else if (side >= 100) {
+  } else if (side > 100) {
     alert(
-      "Due to potential performance issues please enter a number lower than 100."
+      "Due to potential performance issues please enter a number lower than or equal to 100."
     );
   } else {
     createGrid(side);
